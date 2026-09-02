@@ -28,5 +28,5 @@ export class Email {
   receivedAt: Date;
 
   @Column({ type: 'datetime', nullable: true })
-  createdAt: Date | null;
+  respondedAt: Date | null;
 }

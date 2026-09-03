@@ -5,7 +5,8 @@ export class EmailResponseDto {
     id: string;
     subject: string;
     from: string;
-    body: string;
+    text: string;
+    html: string | null;
     receivedAt: Date;
     status: string;
 
@@ -13,7 +14,8 @@ export class EmailResponseDto {
         this.id = email.id;
         this.subject = email.subject;
         this.from = email.from;
-        this.body = email.body;
+        this.text = email.text;
+        this.html = email.html;
         this.receivedAt = email.receivedAt;
         this.status = email.status;
     }

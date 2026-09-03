@@ -19,7 +19,10 @@ export class Email {
   subject: string;
 
   @Column('text')
-  body: string;
+  text: string;
+
+  @Column('text', { nullable: true })
+  html: string | null;
 
   @Column({default: 'received'})
   status: string;

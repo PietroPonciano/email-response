@@ -10,5 +10,6 @@ import { EmailService } from "./email.service.js";
   imports: [ TypeOrmModule.forFeature([Email]) ],
   controllers: [EmailController],
   providers: [EmailService],
+  exports: [EmailService],
 })
 export class EmailModule {}

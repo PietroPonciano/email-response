@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from './database/database.module.js';
 import { EmailModule } from './email/email.module.js';
+import { ResendModule } from './resend/resend.module.js';
 
 
 @Module({
@@ -10,7 +11,8 @@ import { EmailModule } from './email/email.module.js';
       isGlobal: true,
     }),
     DatabaseModule,
-    EmailModule
+    EmailModule,
+    ResendModule,
   ],
   controllers: [],
   providers: [],
